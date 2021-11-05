@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: cadetblue;
+        }
+
+        .lion {
+            position: relative;
+            margin: 50px auto;
+            width: 400px;
+            height: 380px;
+        }
+
+        .lion .face {
+            position: absolute;
+            bottom: 0;
+            width: 400px;
+            height: 367px;
+            border-radius: 100%;
+            border: 8px solid black;
+            background: blanchedalmond;
+        }
+
+        .lion .ear {
+            position: absolute;
+            top: 0;
+            width: 92px;
+            height: 92px;
+            border: 8px solid black;
+            border-radius: 80% 80% 70% 70%;
+            background: blanchedalmond;
+        }
+
+        .lion .ear.left {
+            left: 20px;
+        }
+
+        .lion .ear.right {
+            right: 20px;
+        }
+
+        .lion .eye {
+            position: absolute;
+            top: 147px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: black;
+        }
+
+        .lion .eye.left {
+            top: 120px;
+            left: 90px;
+        }
+
+        .lion .eye.right {
+            top: 120px;
+            right: 90px;
+        }
+
+        .lion .nose {
+            position: absolute;
+            top: 184px;
+            left: 50%;
+            margin-left: -16px;
+            width: 40px;
+            height: 45px;
+            border-radius: 70% 70% 100% 100%;
+            background: black;
+            z-index: 2;
+        }
+
+        .lion .mouth {
+            position: absolute;
+            top: 191px;
+            right: 73px;
+            width: 73px;
+            height: 68px;
+            border: 8px solid black;
+            border-radius: 50%;
+            background:blanchedalmond;
+        }
+
+        .lion .mouth.left {
+            left: 127px;
+        }
+
+        .lion .mouth.right {
+            right: 117px;
+        }
+
+        .lion .touch {
+            position: absolute;
+            top: 178px;
+            left: 83%;
+            width: 40px;
+            height: 20px;
+            border-radius: 100%;
+            background: rgb(250, 212, 242);
+        }
+
+        .lion .touch.left {
+            left: 30px;
+        }
+
+        .lion .touch.right {
+           right: 100px;
+        }
+
+        .lion .cover {
+            position: absolute;
+            top: 175px;
+            width: 100px;
+            height: 50px;
+            background:blanchedalmond ;
+        }
+        .lion .cover.left {
+            left: 120px;
+        }
+        .lion .cover.right {
+            right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lion">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+
+        <div class="face">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="touch left"></div>
+            <div class="touch right"></div>
+            <div class="nose"></div>
+            <div class="mouth left"></div>
+            <div class="mouth right"></div>
+            <div class="cover left"></div>
+            <div class="cover right"></div>
+        </div>
+    </div>
+</body>
+
+</html>
