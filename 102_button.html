@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+    <style>
+        div {
+            width: 211px;
+            height: 240px;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(213, 32, 38, 1) 100%, rgba(0, 212, 255, 1) 100%);
+            position: relative;
+            border: 5px solid rgb(17, 16, 5);
+            border-radius: 10px;
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            font-family: fantasy;
+            line-height: 245px;
+            color: white;
+            overflow: hidden;
+        }
+
+        .open::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            transition: all .5s;
+            transform: rotateY(90deg);
+        }
+
+        .open:hover::after {
+            animation: 개구리 3s;
+            transform: rotateY(0);
+        }
+
+        @keyframes 개구리 {
+            from {
+                content: url("weniv-gary\ 복사본.png");
+            }
+
+            to {
+                content: url("weniv-gary.png");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="open">
+        guess me!
+    </div>
+
+</body>
+
+</html>
