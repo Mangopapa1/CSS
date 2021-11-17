@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holy grail layout</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* util */
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            border: 10px solid black;
+        }
+
+        .item {
+            border: 10px solid brown;
+        }
+
+        .item:nth-child(1) {
+            border: 10px solid darkgreen;
+            width: 100%;
+        }
+
+        .item:nth-child(2) {
+            border: 10px solid tomato;
+            width: 70%;
+        }
+
+        .item:nth-child(3) {
+            border: 10px solid tomato;
+            width: 30%;
+        }
+
+        .item:nth-child(4) {
+            border: 10px solid deeppink;
+            width: 100%;
+        }
+
+        @media screen and (max-width:800px) {
+            .item:nth-child(2) {
+            border: 10px solid tomato;
+            width: 100%;
+        }
+
+        .item:nth-child(3) {
+            border: 10px solid tomato;
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="item">
+        <h1 class="blind">제목1</h1>
+        <nav>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+        </nav>
+    </header>
+    <section class="item">
+        <h2 class="blind">제목2</h2>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore in pariatur illo fugit voluptatum
+            recusandae similique eveniet distinctio quasi animi, officia ipsum amet eius accusantium ipsa impedit itaque
+            delectus. Nobis!
+            Consectetur adipisci corrupti inventore, cum aliquam alias est, ratione vitae neque amet, rerum quod
+            accusamus eum iste numquam optio! Ut reiciendis voluptatem exercitationem odit distinctio, est explicabo
+            numquam nulla accusantium.</article>
+    </section>
+    <aside class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, laudantium. Officia placeat repellendus
+        consectetur totam? Dignissimos cum maxime porro error, iste, voluptatibus ab nulla mollitia odit sed totam,
+        beatae consequatur.</aside>
+    <footer class="item">footer</footer>
+
+</body>
+
+</html>
